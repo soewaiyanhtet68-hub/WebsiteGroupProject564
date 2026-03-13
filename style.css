@@ -208,37 +208,78 @@ footer {
     margin-top: 20px;
 }
 
-/* ===== SERVICES ===== */
-.services-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
+/* CATEGORY TITLE */
+
+.category-title{
+
+margin-top:60px;
+margin-bottom:20px;
+font-size:28px;
+
 }
 
-.service-box {
-    border: 1px solid #ddd;
-    padding: 25px;
-    border-radius: 8px;
-    text-align: center;
+
+/* PERFUME GRID */
+
+.perfume-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+margin-bottom:40px;
+
 }
 
-.service-box button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: black;
-    color: white;
-    border: none;
-    cursor: pointer;
+
+/* PERFUME CARD */
+
+.perfume-card{
+
+border:1px solid #ddd;
+padding:20px;
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+
 }
 
-.service-box button:hover {
-    background: #333;
+
+.perfume-card:hover{
+
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+
 }
 
-.cart-section {
-    margin-top: 50px;
-    text-align: center;
+
+/* PERFUME IMAGE */
+
+.perfume-card img{
+
+width:120px;
+height:auto;
+margin-bottom:10px;
+
+}
+
+
+/* BUTTON */
+
+.perfume-card button{
+
+margin-top:10px;
+padding:10px 20px;
+border:none;
+background:black;
+color:white;
+cursor:pointer;
+
+}
+
+.perfume-card button:hover{
+
+background:#444;
+
 }
 /*===about====*/
 body {

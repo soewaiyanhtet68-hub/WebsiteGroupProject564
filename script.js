@@ -64,3 +64,18 @@ function updateDateTime() {
 
 setInterval(updateDateTime, 1000);
 updateDateTime();
+
+// === Open correct category from index page ===
+
+const params = new URLSearchParams(window.location.search);
+const category = params.get("category");
+
+if(category){
+    
+    const section = document.getElementById(category);
+    
+    if(section){
+        section.scrollIntoView({ behavior: "smooth" });
+    }
+
+}

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services - PAYFUME</title>
 
-<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<!-- External CSS -->
+
 <link rel="stylesheet" href="style.css">
 
 </head>
@@ -16,89 +16,119 @@
 <body>
 
 <header>
-    <div class="logo">PAYFUME</div>
 
-    <button id="theme-toggle" aria-label="Toggle theme">
-        <i class="fa-solid fa-moon"></i>
-    </button>
+<div class="logo">PAYFUME</div>
 
-    <nav>
-        <a href="index.html">HOME</a>
-        <a href="about.html">ABOUT</a>
-        <a href="services.html">SERVICES</a>
-        <a href="contact.html">CONTACT</a>
-    </nav>
+<nav>
+<a href="index.html">HOME</a>
+<a href="about.html">ABOUT</a>
+<a href="services.html">SERVICES</a>
+<a href="contact.html">CONTACT</a>
+</nav>
+
 </header>
 
 <section>
 
-    <h1 style="text-align:center;">Our Perfume Collection</h1>
-
-    <div class="services-container">
-
-        <div class="service-box">
-            <h2>Men's Perfume</h2><br>
-            <p>Elegant and long-lasting fragrance for men.</p>
-            <p><strong>$50</strong></p>
-            <button onclick="addToCart('Men Perfume', 50)">Add to Cart</button>
-        </div>
-
-        <div class="service-box">
-            <h2>Women's Perfume</h2>
-            <p>Sweet and floral fragrance for women.</p>
-            <p><strong>$60</strong></p>
-            <button onclick="addToCart('Women Perfume', 60)">Add to Cart</button>
-        </div>
-
-        <div class="service-box">
-            <h2>Luxury Collection</h2>
-            <p>Premium exclusive luxury scent.</p>
-            <p><strong>$120</strong></p>
-            <button onclick="addToCart('Luxury Perfume', 120)">Add to Cart</button>
-        </div>
-
-    </div>
-
-    <div class="cart-section">
-        <h2>Your Cart</h2>
-        <p id="cartItems">No items yet</p>
-        <h3>Total: $<span id="totalPrice">0</span></h3>
-    </div>
-
-    
-
-    <h1 style="text-align:center;">Checkout</h1>
+<h1>Our Perfume Collection</h1>
 
 
-    <form id="placeOrder" class="contact-form">
-        
-        <input type="text" id="name" placeholder="Your Name" required>
-        
-        <input type="email" id="email" placeholder="Your Email" required>
-        
-        <textarea id="address" rows="6" placeholder="Your Address" required></textarea>
-        
-        <button type="submit">Place Order</button>
+<!-- MEN PERFUMES -->
 
-        <p id="successMessage" class="success-message"></p>
+<h2 id="men" class="category-title">Men's Perfumes</h2>
+<div class="perfume-grid">
 
-    </form>
+<div class="perfume-card">
+<img src="Images/sauvage.jpg">
+<h3>Dior Sauvage</h3>
+<p>$95</p>
+<button onclick="addToCart('Dior Sauvage',95)">Add to Cart</button>
+</div>
+
+<div class="perfume-card">
+<img src="Images/chanel.jpg">
+<h3>Bleu de Chanel</h3>
+<p>$110</p>
+<button onclick="addToCart('Bleu de Chanel',110)">Add to Cart</button>
+</div>
+
+<div class="perfume-card">
+<img src="Images/eros.jpg">
+<h3>Versace Eros</h3>
+<p>$85</p>
+<button onclick="addToCart('Versace Eros',85)">Add to Cart</button>
+</div>
+
+<div class="perfume-card">
+<img src="Images/armani.jpg">
+<h3>Armani Code</h3>
+<p>$90</p>
+<button onclick="addToCart('Armani Code',90)">Add to Cart</button>
+</div>
+
+</div>
 
 
+
+<!-- WOMEN PERFUMES -->
+
+<h2 id="women" class="category-title">Women's Perfumes</h2>
+<div class="perfume-grid">
+
+<div class="perfume-card">
+<img src="Images/chanel5.jpg">
+<h3>Chanel No.5</h3>
+<p>$120</p>
+<button onclick="addToCart('Chanel No5',120)">Add to Cart</button>
+</div>
+
+<div class="perfume-card">
+<img src="Images/missdior.jpg">
+<h3>Miss Dior</h3>
+<p>$105</p>
+<button onclick="addToCart('Miss Dior',105)">Add to Cart</button>
+</div>
+
+<div class="perfume-card">
+<img src="Images/opium.jpg">
+<h3>YSL Black Opium</h3>
+<p>$115</p>
+<button onclick="addToCart('Black Opium',115)">Add to Cart</button>
+</div>
+
+<div class="perfume-card">
+<img src="Images/gucci.jpg">
+<h3>Gucci Bloom</h3>
+<p>$98</p>
+<button onclick="addToCart('Gucci Bloom',98)">Add to Cart</button>
+</div>
+
+</div>
+
+
+<!-- CART -->
+
+<div class="cart-section">
+
+<h2>Your Cart</h2>
+
+<p id="cartItems">No items yet</p>
+
+<h3>Total: $<span id="totalPrice">0</span></h3>
+
+</div>
 
 </section>
 
 <footer>
-    © 2026 PAYFUME. All Rights Reserved.
-     <p id="currentDateTime"></p>
+
+© 2026 PAYFUME. All Rights Reserved.
+<p id="currentDateTime"></p>
+
 </footer>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
-
-
-
-
-
